@@ -43,9 +43,11 @@ After that edit goods.examples.json
 {
         "title": <your_title_here>,
         "price": {
-            "en": <price_for_crypto_payments>,
-            "ru": <price_for_yookassa_payments>
+                "en": <price_for_crypto_payments>,
+                "ru": <price_for_yookassa_payments>,
+                "stars": <price_for_tg_stars_payments>
         },
+        "traffic": "10", #limit in bytes (reset - every day)
         "callback": <unique_id_for_good>,
         "months": <umber_of_months>
     }
