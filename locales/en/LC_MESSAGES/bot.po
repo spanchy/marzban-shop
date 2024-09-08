@@ -1,4 +1,4 @@
-# English translations for PROJECT.
+# English original for PROJECT.
 # Copyright (C) 2023 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
@@ -8,66 +8,67 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2023-10-22 16:40+0300\n"
-"PO-Revision-Date: 2024-06-23 21:47+0300\n"
+"PO-Revision-Date: 2024-09-08 12:10+0300\n"
 "Last-Translator: \n"
-"Language-Team: en <LL@li.org>\n"
-"Language: en\n"
+"Language-Team: ru <LL@li.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.12.1\n"
 "X-Generator: Poedit 2.0.2\n"
 
-#: bot/handlers/callbacks.py:27
-msgid "To be paid - {amount}₽ ⬇️"
+#: bot/handlers/callbacks.py:29
+msgid "To be paid - {amount} ₽ ⬇️"
 msgstr ""
 
-#: bot/handlers/callbacks.py:48
-msgid "To be paid - {amount}$ ⬇️"
+#: bot/handlers/callbacks.py:50
+msgid "Subscription for {amount} month"
 msgstr ""
 
-#: bot/handlers/callbacks.py:59
+#: bot/handlers/callbacks.py:50
+msgid "To be paid - {amount} ⭐️ ⬇️"
+msgstr ""
+
+#: bot/handlers/callbacks.py:77
+msgid "To be paid - {amount} $ ⬇️"
+msgstr ""
+
+#: bot/handlers/callbacks.py:89
 msgid "Select payment method ⬇️"
 msgstr ""
 
 #: bot/handlers/commands.py:17
-msgid ""
-"Hello, {name} 👋🏻\n"
-"\n"
-"Select an action ⬇️"
+msgid "Hello, {name} 👋 \n\nSelect an action ⬇️"
 msgstr ""
 
-#: bot/handlers/messages.py:29
+#: bot/handlers/messages.py:16
 msgid "Choose the appropriate tariff ⬇️"
 msgstr ""
 
-#: bot/handlers/messages.py:38
-msgid ""
-"Your profile is not active at the moment.\n️"
-"\n"
-"You can choose \"5 days free 🆓\" or \"Join 🏄🏻‍♂️\"."
+#: bot/handlers/messages.py:23
+msgid "Your profile is not active at the moment.\n️\nYou can choose \"1 day free 🆓\" or \"Join 🏄\"."
 msgstr ""
 
-#: bot/handlers/messages.py:41
+#: bot/handlers/messages.py:25
 msgid "Subscription page ⬇️"
 msgstr ""
 
-#: bot/handlers/messages.py:52
+#: bot/handlers/messages.py:36
 msgid "Follow the <a href=\"{link}\">link</a> and ask us a question. We are always happy to help 🤗"
 msgstr ""
 
-#: bot/handlers/messages.py:64
+#: bot/handlers/messages.py:45
 msgid "Your subscription is available in the \"My subscription 👤\" section."
 msgstr ""
 
 #: bot/handlers/messages.py:52
-msgid ""
-"Thank you for choice ❤️\n️"
-"\n"
-"<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️"
-"\n"
-"Your subscription is purchased and available in the \"My subscription 👤\" section."
+msgid "Thank you for choice ❤️\n️\n<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️\nYour subscription is purchased and available in the \"My subscription 👤\" section."
+msgstr ""
+
+#: bot/app/routes.py:44
+msgid "Thank you for choice ❤️\n️\n<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️\nYour subscription is purchased and available in \"My subscription 👤\" section."
 msgstr ""
 
 #: bot/keyboards/back.py:7
@@ -75,74 +76,59 @@ msgid "⏪ Back"
 msgstr ""
 
 #: bot/keyboards/buy_menu.py:11
-msgid "{title} - {price_ru}₽"
+msgid "{title} - {price_ru} ₽"
 msgstr ""
 
 #: bot/keyboards/main_menu.py:11
-msgid "Join 🏄🏻‍♂️"
+msgid "Join 🏄"
 msgstr ""
 
 #: bot/keyboards/main_menu.py:14
-msgid "My subscription 👤"
-msgstr ""
-
-#: bot/keyboards/main_menu.py:15
-msgid "Frequent questions ℹ️"
-msgstr ""
-
-#: bot/keyboards/main_menu.py:18
 msgid "Support ❤️"
 msgstr ""
 
-#: bot/handlers/messages.py:32
-msgid "Follow the <a href=\"{link}\">link</a> 🔗" 
+#: bot/keyboards/main_menu.py:19
+msgid "Frequent questions ℹ️"
 msgstr ""
 
 #: bot/keyboards/main_menu.py:23
-msgid "5 days free 🆓"
+msgid "My subscription 👤"
+msgstr ""
+
+#: bot/handlers/messages.py:29
+msgid "Follow the <a href=\"{link}\">link</a> 🔗"
+msgstr ""
+
+#: bot/keyboards/main_menu.py:28
+msgid "1 day free 🆓"
 msgstr ""
 
 #: bot/keyboards/pay.py:9
-msgid "Pay"
+msgid "Pay 💳"
 msgstr ""
 
-#: bot/keyboards/payments.py:23
-msgid "YooKassa (₽)"
+#: bot/keyboards/payments.py:16
+msgid "No payment method enabled."
 msgstr ""
 
-#: bot/tasks/notify_expired.py:22
-msgid ""
-"Hello, {name} 👋🏻\n"
-"\n"
-"Thank you for using our service ❤️\n️"
-"\n"
-"Your VPN subscription expires {day}, at the end of the day.\n️"
-"\n"
-"To renew it, just go to the \"Join 🏄🏻‍♂️\" section and make a payment."
+#: bot/keyboards/payments.py:24
+msgid "YooKassa - {price} ₽"
+msgstr ""
+
+#: bot/tasks/notify_renew_subscription.py:22
+msgid "Hello, {name} 👋 \n\nThank you for using our service ❤️\n️\nYour VPN subscription expires {day}.\n️\nTo renew it, just go to the \"Join 🏄\" section and make a payment."
+msgstr ""
+
+#: bot/tasks/notify_renew_subscription.py:45
+msgid "today"
+msgstr ""
+
+#: bot/tasks/notify_renew_subscription.py:46
+msgid "tomorrow"
 msgstr ""
 
 #: bot/keyboards/subscription.py:11
 msgid "Follow 🔗"
-msgstr ""
-
-#: bot/tasks/notify_expired.py:42
-msgid "today"
-msgstr ""
-
-#: bot/tasks/notify_expired.py:42
-msgid "tomorrow"
-msgstr ""
-
-#: bot/keyboards/main_menu.py:11
-msgid "Payment 🏄🏻‍♂️"
-msgstr ""
-
-#: bot/handlers/callbacks.py:52
-msgid "To be paid - {amount}⭐️ ⬇️"
-msgstr ""
-
-#: bot/handlers/callbacks.py:50
-msgid "Subscription for {amount} month"
 msgstr ""
 
 #: bot/keyboards/xtr_pay.py:6
