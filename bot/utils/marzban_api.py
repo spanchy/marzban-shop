@@ -14,7 +14,7 @@ PROTOCOLS = {
         {
             "flow": "xtls-rprx-vision"
         },
-        ["VLESS Reality Steal Oneself"]
+        ["VLESS TCP REALITY"]
     ],
     "trojan": [
         {},
@@ -129,7 +129,7 @@ async def generate_test_subscription(username: str):
             'proxies': ps["proxies"],
             'inbounds': ps["inbounds"],
             'expire': get_test_subscription(glv.config['PERIOD_LIMIT']),
-            'data_limit': 0,
+            'data_limit': 50 * 1024 * 1024 * 1024,
             'data_limit_reset_strategy': "no_reset",
         }
         result = await panel.add_user(user)
@@ -151,8 +151,8 @@ async def generate_marzban_subscription(username: str, good):
             'proxies': ps["proxies"],
             'inbounds': ps["inbounds"],
             'expire': get_subscription_end_date(good['months']),
-            'data_limit': 0,
-            'data_limit_reset_strategy': "no_reset",
+            'data_limit': good["traffic"],
+            'data_limit_reset_strategy': "day",
         }
         result = await panel.add_user(user)
     return result
