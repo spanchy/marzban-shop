@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2023-10-22 16:40+0300\n"
-"PO-Revision-Date: 2024-06-23 21:47+0300\n"
+"PO-Revision-Date: 2024-09-08 11:53+0300\n"
 "Last-Translator: \n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
@@ -19,153 +19,117 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 "X-Generator: Poedit 2.0.2\n"
 
-#: bot/handlers/callbacks.py:27
-msgid "To be paid - {amount}₽ ⬇️"
-msgstr "К оплате - {amount}₽ ⬇️"
+#: bot/handlers/callbacks.py:29
+msgid "To be paid - {amount} ₽ ⬇️"
+msgstr "К оплате - {amount} ₽ ⬇️"
 
-#: bot/handlers/callbacks.py:48
-msgid "To be paid - {amount}$ ⬇️"
-msgstr "️К оплате - {amount}$ ⬇️"
+#: bot/handlers/callbacks.py:50
+msgid "Subscription for {amount} month"
+msgstr "Подписка на {amount} мес."
 
-#: bot/handlers/callbacks.py:48
-msgid "To be paid - {amount}$ ⬇️"
-msgstr "️К оплате - {amount}$ ⬇️"
+#: bot/handlers/callbacks.py:50
+msgid "To be paid - {amount} ⭐️ ⬇️"
+msgstr "К оплате - {amount} ⭐️ ⬇️"
+
+#: bot/handlers/callbacks.py:77
+msgid "To be paid - {amount} $ ⬇️"
+msgstr "К оплате - {amount} $ ⬇️"
 
 #: bot/handlers/callbacks.py:59
 msgid "Select payment method ⬇️"
 msgstr "Выберите способ оплаты ⬇️"
 
 #: bot/handlers/commands.py:17
-msgid ""
-"Hello, {name} 👋🏻\n"
-"\n"
-"Select an action ⬇️"
-msgstr ""
-"Здравствуйте, {name} 👋🏻\n"
-"\n"
-"Выберите действие ⬇️"
+msgid "Hello, {name} 👋 \n\nSelect an action ⬇️"
+msgstr "Здравствуйте, {name} 👋 \n\nВыберите действие ⬇️"
 
-#: bot/handlers/messages.py:29
+#: bot/handlers/messages.py:16
 msgid "Choose the appropriate tariff ⬇️"
 msgstr "Выберите подходящий тариф ⬇️"
 
-#: bot/handlers/messages.py:38
-msgid ""
-"Your profile is not active at the moment.\n️"
-"\n"
-"You can choose \"5 days free 🆓\" or \"Join 🏄🏻‍♂️\"."
-msgstr ""
-"Ваш профиль не активен в данный момент.\n️"
-"\n"
-"Вы можете выбрать \"5 дней бесплатно 🆓\" или \"Присоединиться 🏄🏻‍♂️\"."
+#: bot/handlers/messages.py:23
+msgid "Your profile is not active at the moment.\n️\nYou can choose \"1 day free 🆓 \" or \"Join 🏄\"."
+msgstr "Ваш профиль не активен в данный момент.\n️\nВы можете выбрать \"1 день бесплатно 🆓 \" или \"Присоединиться 🏄\"."
 
-#: bot/handlers/messages.py:41
+#: bot/handlers/messages.py:25
 msgid "Subscription page ⬇️"
 msgstr "Страница подписки ⬇️"
 
-#: bot/handlers/messages.py:52
+#: bot/handlers/messages.py:36
 msgid "Follow the <a href=\"{link}\">link</a> and ask us a question. We are always happy to help 🤗"
 msgstr "Перейдите по <a href=\"{link}\">ссылке</a> и задайте нам вопрос. Мы всегда рады помочь 🤗"
 
-#: bot/handlers/messages.py:64
+#: bot/handlers/messages.py:45
 msgid "Your subscription is available in the \"My subscription 👤\" section."
 msgstr "Ваша подписка доступна в разделе \"Моя подписка 👤\"."
 
 #: bot/handlers/messages.py:52
-msgid ""
-"Thank you for choice ❤️\n️"
-"\n"
-"<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️"
-"\n"
-"Your subscription is purchased and available in the \"My subscription 👤\" section."
-msgstr ""
-"Благодарим за ваш выбор ❤️\n️"
-"\n"
-"<a href=\"{link}\">Подпишитесь</a>, чтобы не пропустить объявления ✅\n️"
-"\n"
-"Подписка оплачена и доступна в разделе Моя подписка 👤.\n"
+msgid "Thank you for choice ❤️\n️\n<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️\nYour subscription is purchased and available in the \"My subscription 👤\" section."
+msgstr "Благодарим за ваш выбор ❤️\n️\n<a href=\"{link}\">Подпишитесь</a>, чтобы не пропустить объявления ✅\n️\nПодписка оплачена и доступна в разделе \"Моя подписка 👤\"."
+
+#: bot/app/routes.py:44
+msgid "Thank you for choice ❤️\n️\n<a href=\"{link}\">Subscribe</a> so you don't miss any announcements ✅\n️\nYour subscription is purchased and available in \"My subscription 👤\" section."
+msgstr "Благодарим за ваш выбор ❤️\n️\n<a href=\"{link}\">Подпишитесь</a>, чтобы не пропустить объявления ✅\n️\nПодписка оплачена и доступна в разделе \"Моя подписка 👤\"."
 
 #: bot/keyboards/back.py:7
 msgid "⏪ Back"
 msgstr "⏪ Назад"
 
 #: bot/keyboards/buy_menu.py:11
-msgid "{title} - {price_ru}₽"
-msgstr "{title} - {price_ru}₽"
+msgid "{title} - {price_ru} ₽"
+msgstr "{title} - {price_ru} ₽"
 
 #: bot/keyboards/main_menu.py:11
-msgid "Join 🏄🏻‍♂️"
-msgstr "Присоединиться 🏄🏻‍♂️"
+msgid "Join 🏄"
+msgstr "Присоединиться 🏄"
 
 #: bot/keyboards/main_menu.py:14
-msgid "My subscription 👤"
-msgstr "Моя подписка 👤"
-
-#: bot/keyboards/main_menu.py:15
-msgid "Frequent questions ℹ️"
-msgstr "Частые вопросы ℹ️"
-
-#: bot/keyboards/main_menu.py:18
 msgid "Support ❤️"
 msgstr "Поддержка ❤️"
 
-#: bot/handlers/messages.py:32
+#: bot/keyboards/main_menu.py:19
+msgid "Frequent questions ℹ️"
+msgstr "Частые вопросы ℹ️"
+
+#: bot/keyboards/main_menu.py:23
+msgid "My subscription 👤"
+msgstr "Моя подписка 👤"
+
+#: bot/handlers/messages.py:29
 msgid "Follow the <a href=\"{link}\">link</a> 🔗"
 msgstr "Перейти по <a href=\"{link}\">ссылке</a> 🔗"
 
-#: bot/keyboards/main_menu.py:23
-msgid "5 days free 🆓"
-msgstr "5 дней бесплатно 🆓"
+#: bot/keyboards/main_menu.py:28
+msgid "1 day free 🆓 "
+msgstr "1 день бесплатно 🆓 "
 
 #: bot/keyboards/pay.py:9
-msgid "Pay"
-msgstr "Оплатить"
+msgid "Pay 💳"
+msgstr "Оплатить 💳"
 
-#: bot/keyboards/payments.py:23
-msgid "YooKassa (₽)"
-msgstr "ЮKassa (₽)"
+#: bot/keyboards/payments.py:16
+msgid "No payment method enabled."
+msgstr "Не настроено ни одного способа оплаты."
 
-#: bot/tasks/notify_renew_sub.py:21
-msgid ""
-"Hello, {name} 👋🏻\n"
-"\n"
-"Thank you for using our service ❤️\n️"
-"\n"
-"Your VPN subscription expires {day}, at the end of the day.\n️"
-"\n"
-"To renew it, just go to the \"Join 🏄🏻‍♂️\" section and make a payment."
-msgstr ""
-"Здравствуйте, {name} 👋🏻\n"
-"\n"
-"Спасибо, что пользуетесь нашим сервисом ❤️\n️"
-"\n"
-"Ваша VPN-подписка истекает {day}, в конце дня.\n️"
-"\n"
-"Чтобы продлить её, достаточно перейти в раздел \"Присоединиться 🏄🏻‍♂️\" и произвести оплату."
+#: bot/keyboards/payments.py:24
+msgid "YooKassa - {price} ₽"
+msgstr "ЮKassa - {price} ₽"
+
+#: bot/tasks/notify_renew_subscription.py:22
+msgid "Hello, {name} 👋 \n\nThank you for using our service ❤️\n️\nYour VPN subscription expires {day}.\n️\nTo renew it, just go to the \"Join 🏄\" section and make a payment."
+msgstr "Здравствуйте, {name} 👋 \n\nСпасибо, что пользуетесь нашим сервисом ❤️\n️\nВаша VPN-подписка истекает {day}.\n️\nЧтобы продлить её, достаточно перейти в раздел \"Присоединиться 🏄\" и произвести оплату."
+
+#: bot/tasks/notify_renew_subscription.py:45
+msgid "today"
+msgstr "сегодня"
+
+#: bot/tasks/notify_renew_subscription.py:46
+msgid "tomorrow"
+msgstr "завтра"
 
 #: bot/keyboards/subscription.py:11
 msgid "Follow 🔗"
 msgstr "Перейти 🔗"
-
-#: bot/tasks/notify_expired.py:42
-msgid "today"
-msgstr "сегодня"
-
-#: bot/tasks/notify_expired.py:42
-msgid "tomorrow"
-msgstr "завтра"
-
-#: bot/keyboards/main_menu.py:11
-msgid "Payment 🏄🏻‍♂️"
-msgstr "Оплата 🏄🏻‍♂️"
-
-#: bot/handlers/callbacks.py:52
-msgid "To be paid - {amount}⭐️ ⬇️"
-msgstr "К оплате - {amount}⭐️ ⬇️"
-
-#: bot/handlers/callbacks.py:50
-msgid "Subscription for {amount} month"
-msgstr "Подписка {amount} мес."
 
 #: bot/keyboards/xtr_pay.py:6
 msgid "Pay"
