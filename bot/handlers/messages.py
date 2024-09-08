@@ -20,7 +20,7 @@ async def buy(message: Message):
 async def profile(message: Message):
     user = await marzban_api.get_marzban_profile(message.from_user.id)
     if user is None:
-        await message.answer(_("Your profile is not active at the moment.\n️\nYou can choose \"5 days free 🆓\" or \"Join 🏄🏻‍♂️\"."), reply_markup=get_main_menu_keyboard(False))
+        await message.answer(_("Your profile is not active at the moment.\n️\nYou can choose \"1 day free 🆓 \" or \"Join 🏄\"."), reply_markup=get_main_menu_keyboard(False))
         return
     await message.answer(_("Subscription page ⬇️"), reply_markup=get_subscription_keyboard(glv.config['PANEL_GLOBAL'] + user['subscription_url']))
 
@@ -38,7 +38,7 @@ async def support(message: Message):
             link=glv.config['SUPPORT_LINK']),
         reply_markup=get_back_keyboard())
 
-@router.message(F.text == __("5 days free 🆓"))
+@router.message(F.text == __("1 day free 🆓"))
 async def test_subscription(message: Message):
     result = await had_test_sub(message.from_user.id)
     if result:
